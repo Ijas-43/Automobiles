@@ -1,0 +1,34 @@
+.bg-contact{
+  background: url("/assets/contact/contact_us.jpeg");
+
+  background-size:contain;
+}
+.space{
+  margin-top: 300px !important;
+}
+
+.form-control{
+  border: 0;
+  height: 50px;
+  border-radius: 0;
+}
+
+.form-control:focus
+{
+
+  box-shadow: none;
+  outline: 0;
+
+}
+.bg{
+  background: black;
+}
+.text{
+  height: 100px;
+}
+.disclaimer{
+  text-align: justify;
+}
+a:hover{
+  color: red !important;
+  }
