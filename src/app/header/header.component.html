@@ -1,7 +1,8 @@
 
 <nav class="navbar sticky-top navbar-expand-lg bg-dark py-3">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/logo/logo.png" alt="img" width="200" height="25"></a>
+      <!-- <a class="navbar-brand" href="#"><img src="./assets/logo/logo.png" alt="img" width="200" height="25"></a> -->
+      <a class="navbar-brand" href="#" class="fs-3 fw-bold text-white text-decoration-none fst-italic"><span class="text-warning">Auto</span>mobiles <span class="text-warning">ser</span>vice</a>
       <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -15,16 +16,22 @@
                   <a class="nav-link text-white fw-bold me-5" href="" routerLink="/about" routerLinkActive="active-link">About</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link text-white fw-bold me-5" href="#" routerLink="/sales" routerLinkActive="active-link">Sales</a>
+            </li>
+              <li class="nav-item">
                   <a class="nav-link text-white fw-bold me-5" href="#" routerLink="/service" routerLinkActive="active-link">Services</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-white fw-bold me-5" href="#" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
+                  <a class="nav-link text-white fw-bold me-3" href="#" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
               </li>
+
+
           </ul>
 
 
           <form class="d-flex" role="login">
-              <button class="btn btn-outline-primary fw-bold" type="submit" routerLink="/login">Login</button>
+            <button class="btn btn-warning fw-bold me-3" type="submit" routerLink="/dialog">Make a Request</button>
+              <button class="btn btn-outline-warning fw-bold" type="submit" routerLink="/login">Login</button>
           </form>
       </div>
   </div>

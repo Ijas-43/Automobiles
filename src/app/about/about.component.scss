@@ -1,33 +1,32 @@
+
 .bg{
   background: black;
 }
-.banner-1{
-  width: 1519px;
-  height: 600px;
 
-}
-.wheel{
-  width:100%;
-  height: 305px;
-}
-
-
-.engine{
-  letter-spacing: 2px;
-  font-size: 20px;
-  position: relative;
-}
-.engine:after{
-  content: "";
-  height: 3px;
-  width:10%;
-  background-color: #007bff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
+.banner-padding{
+  padding-bottom: 220px;
 }
 .sub{
   letter-spacing: 1px;
   line-height: 30px;
+  text-align: justify;
+
+}
+.img-size
+{
+  width: 100%;
+  height: 450px;
+}
+.text-warning{
+  color:#f9d342
+}
+.border-warning{
+  border-color: #f9d342;
+}
+.btn-bg{
+  background-color: #f9d342;
+
+  }
+.text-white{
   text-align: justify;
 }

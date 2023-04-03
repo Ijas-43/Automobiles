@@ -1,3 +1,9 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActive()"></router-outlet>
+<div class="position-fixed size" style="top:80%; left: 95%;">
+  <a href="https://wa.me/919025005735" title="Chat with us Whatsapp" target="_blank"><img src="./assets/home/whatsapp.svg" alt="whatsapp" width="50"></a>
+</div>
+<div class="position-fixed size" style="top:93%; left: 95%;">
+  <a  title="back to top" (click)="gotoTop()"><img src="./assets/home/arrow.svg" alt="whatsapp" width="40"></a>
+</div>
 <app-footer></app-footer>

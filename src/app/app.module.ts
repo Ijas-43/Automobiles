@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +12,14 @@ import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { SalesComponent } from './sales/sales.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogboxComponent } from './lazy/dialogbox/dialogbox.component';
+import{MatButtonModule} from '@angular/material/button';
+import{MatIconModule} from '@angular/material/icon';
+import{MatFormFieldModule} from '@angular/material/form-field';
+import{MatInputModule} from '@angular/material/input';
+import{MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -22,11 +31,22 @@ import { SignupComponent } from './signup/signup.component';
     ServiceComponent,
     ContactComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SalesComponent,
+    DialogboxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
