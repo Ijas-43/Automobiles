@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/authentication/auth.service';
 @Component({
-  selector: 'app-dialogbox',
-  templateUrl: './dialogbox.component.html',
-  styleUrls: ['./dialogbox.component.scss']
+  selector: 'app-request-fom',
+  templateUrl: './request-fom.component.html',
+  styleUrls: ['./request-fom.component.scss']
 })
-export class DialogboxComponent implements OnInit {
+export class RequestFomComponent  implements OnInit {
   constructor(private auth: AuthService) {}
   state: any = [];
   city: any = [];
@@ -44,4 +44,3 @@ export class DialogboxComponent implements OnInit {
   }
 
 }
-

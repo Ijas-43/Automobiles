@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogboxComponent } from './dialogbox.component';
+import { RequestFomComponent } from './request-fom.component';
 
-describe('DialogboxComponent', () => {
-  let component: DialogboxComponent;
-  let fixture: ComponentFixture<DialogboxComponent>;
+describe('RequestFomComponent', () => {
+  let component: RequestFomComponent;
+  let fixture: ComponentFixture<RequestFomComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DialogboxComponent ]
+      declarations: [ RequestFomComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DialogboxComponent);
+    fixture = TestBed.createComponent(RequestFomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -10,16 +10,13 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
 import { SalesComponent } from './sales/sales.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogboxComponent } from './lazy/dialogbox/dialogbox.component';
 import{MatButtonModule} from '@angular/material/button';
 import{MatIconModule} from '@angular/material/icon';
 import{MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input';
-import{MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -30,10 +27,7 @@ import{MatDialogModule} from '@angular/material/dialog';
     AboutComponent,
     ServiceComponent,
     ContactComponent,
-    LoginComponent,
-    SignupComponent,
-    SalesComponent,
-    DialogboxComponent
+    SalesComponent
   ],
   imports: [
     BrowserModule,
@@ -42,8 +36,8 @@ import{MatDialogModule} from '@angular/material/dialog';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatButtonModule,
     MatDialogModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule
