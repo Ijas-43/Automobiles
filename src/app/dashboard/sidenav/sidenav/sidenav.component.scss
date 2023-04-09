@@ -1,0 +1,47 @@
+.mat-icon
+{
+  vertical-align: center;
+  margin-right: 1rem;
+}
+
+.mat-divider{
+  border-top-width: 2px;
+  border-color: white;
+}
+
+
+.mat-list-item{
+  color: #94a3b8;
+  font-size: 0.8rem;
+  height: 44px;
+  margin-bottom: 4px;
+::ng-deep{
+  .mdc-list-item__content{
+  border-radius: 5px;
+  margin: 0 8px;
+  &:hover{
+    background-color: #2c3344;
+  }
+}
+}
+}
+
+.list-item-active{
+  color: #f2f5f7;
+  ::ng-deep{
+    .mdc-list-item__content {
+padding: 20px;
+      background-color: #2c3344;
+      &:hover{
+        background-color: #2c3344;
+      }
+    }
+  }
+}
+
+.mat-subheader{
+  color:#818cf8;
+  font-size: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}

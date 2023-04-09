@@ -17,6 +17,9 @@ import{MatIconModule} from '@angular/material/icon';
 import{MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { RequestFormComponent } from './request/request-form/request-form.component';
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     ServiceComponent,
     ContactComponent,
-    SalesComponent
+    SalesComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,

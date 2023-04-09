@@ -1,0 +1,77 @@
+<div class="bg-service-img" style=" background-image: url(./assets/login/bg-ban1.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 58px;">
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6 mt-5 bg-white pb-5 px-4  rounded-2 border border-5 border-warning">
+      <h3 class="py-3 text-center fst-italic">Sign Up Form</h3>
+      <div class="form-style">
+        <form class="row">
+          <div class="form-group pb-3 col-md-6">
+            <input type="text" name="name" id="exampleInputText" placeholder="Enter Your Name" class="form-control"
+              aria-describedby="name">
+          </div>
+          <div class="form-group pb-3 col-md-6">
+            <input type="text" name="name" id="exampleInputText" placeholder="Enter Store Name" class="form-control"
+              aria-describedby="name">
+          </div>
+          <div class="form-group pb-3 col-md-6">
+            <input type="email" name="email" id="exampleInputEmail1" placeholder="Enter Your Email" class="form-control"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="col-md-6 pb-4 col-6">
+            <div class="input-group">
+              <span class="input-group-text bg-white rounded-0 border border-1 border-top-0 border-start-0 border-end-0" id="basic-addon1">+91</span>
+              <input type="number" name="email" id="exampleInputNumber" placeholder="Ente Your Mobile Number"
+                class="form-control" aria-describedby="numberHelp" required>
+            </div>
+
+          </div>
+
+          <div class="form-group pb-4 col-md-6">
+            <select id="inputState" class="form-select pb-2 form-control rounded-0 border-1 border border-top-0 border-start-0 border-end-0" (change)="onSelect($event)">
+              <option selected>Select State</option>
+              <option *ngFor="let states of state" value="{{states.state}}">{{states.name}}</option>
+
+            </select>
+          </div>
+
+          <div class="form-group pb-4 col-md-6 col-6">
+            <select id="inputState" class="form-select pb-2 form-control rounded-0 border-1 border border-top-0 border-start-0 border-end-0">
+              <option selected>Select City</option>
+              <option *ngFor="let cities of city">{{cities.name}}</option>
+
+            </select>
+          </div>
+
+          <div class="form-group pb-4 col-md-6">
+            <input type="Number" name="numbe" id="exampleInputNumber" placeholder="Ente Pincode"
+              class="form-control" aria-describedby="numberHelp" required>
+          </div>
+          <div class="form-group pb-3 col-md-6">
+            <input type="password" name="pass" id="exampleInputPassword1" placeholder="password" class="form-control">
+          </div>
+
+          <div class="form-group col-md-6">
+            <textarea class="form-control  rounded-0 border border-2 border-top-0 border-start-0 border-end-0" placeholder="Enter Address 1" id="exampleFormControlTextarea1"></textarea>
+          </div>
+
+          <div class="form-group col-md-6">
+            <textarea class="form-control  rounded-0 border border-2 border-top-0 border-start-0 border-end-0" placeholder="Enter Address 2" id="exampleFormControlTextarea1"></textarea>
+          </div>
+
+
+
+        </form>
+        <div class="py-4">
+          <button type="submit" class="btn btn-dark w-100 font-weight-bold mt-2" routerLink="/dashboard">Submit</button>
+        </div>
+        <div class=" text-center">
+          Already do you have account ?. <a href="#" routerLink="/authenticate/login" class="text-decoration-none">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

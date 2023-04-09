@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-
-
-import { RequestFomComponent } from '../additional/request-fom/request-fom.component';
+import { RequestFormComponent } from '../request/request-form/request-form.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +10,7 @@ export class HeaderComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
-    const dialogRef = this.dialog.open(RequestFomComponent);
+    const dialogRef = this.dialog.open(RequestFormComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
