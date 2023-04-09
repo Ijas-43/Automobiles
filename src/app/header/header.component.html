@@ -1,7 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg bg-dark py-3">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#"><img src="./assets/logo/logo.png" alt="img" width="200" height="25"></a> -->
-    <a class="navbar-brand" href="#" class="fs-3 fw-bold text-white text-decoration-none fst-italic"><span
+       <a class="navbar-brand" href="#" class="fs-3 fw-bold text-white text-decoration-none fst-italic"><span
         class="text-warning">Auto</span>mobiles <span class="text-warning">ser</span>vice</a>
     <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -11,8 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white fw-bold me-5" aria-current="page" href="#" routerLink="/home"
-            routerLinkActive="active-link">Home</a>
+          <a class="nav-link text-white active fw-bold" aria-current="page" href="#" routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white fw-bold me-5" href="" routerLink="/about"
@@ -36,7 +34,6 @@
 
 
       <form class="d-flex" role="login">
-        <!-- (click)="openDialog()" -->
         <button class="btn btn-warning fw-bold me-3" type="submit" (click)="openDialog()">Make a Request</button>
         <button class="btn btn-outline-warning fw-bold" type="submit" routerLink="/authenticate/login">Login</button>
       </form>

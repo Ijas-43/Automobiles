@@ -6,31 +6,31 @@ import { HomeComponent } from './home/home.component';
 import { SalesComponent } from './sales/sales.component';
 import { ServiceComponent } from './service/service.component';
 const routes: Routes = [
-
   {
-    path: 'home', component: HomeComponent
-  },
-  {
-    path: '', redirectTo: 'home', pathMatch:'full'
-  },
-  {
-    path: 'about', component: AboutComponent
+    path: '', redirectTo: 'home', pathMatch: 'full'
   },
 
   {
-    path: 'service', component: ServiceComponent
+    path: "home", component: HomeComponent
   },
   {
-    path: 'contact', component: ContactComponent
+    path: "about", component: AboutComponent
   },
 
   {
-    path: 'sales', component:SalesComponent
+    path: "service", component: ServiceComponent
+  },
+  {
+    path: "contact", component: ContactComponent
   },
 
-  { path: 'authenticate', loadChildren: () => import('./authenticate/authenticate.module').then(m => m.AuthenticateModule) },
+  {
+    path: "sales", component:SalesComponent
+  },
 
-  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: "authenticate", loadChildren: () => import('./authenticate/authenticate.module').then(m => m.AuthenticateModule) },
+
+  { path: "dashboard", loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
 ];
 
 @NgModule({
